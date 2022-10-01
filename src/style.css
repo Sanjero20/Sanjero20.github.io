@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --background: #282a37;
+  --primary: #01cc8e;
+}
+
+/* reset stylings */
+li {
+  list-style-type: none;
+}
+
+/*  */
+body {
+  height: 100vh;
+  background-color: var(--background);
+}
+
+/* general style */
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(80%, 1000px);
+  display: flex;
+}
+
+/* Splash page */
+.splash-page {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.splash-page .name {
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
+
+.splash-page .role {
+  font-family: 'Anonymous Pro', 'Poppins', sans-serif;
+  font-size: clamp(1rem, 3vw, 3rem);
+}
