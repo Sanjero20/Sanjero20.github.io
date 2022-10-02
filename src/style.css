@@ -10,7 +10,9 @@
 
 :root {
   --background: #282a37;
+  --main-color: #333748;
   --primary: #01cc8e;
+  --profile-icon-size: 200px;
 }
 
 /* reset stylings */
@@ -20,6 +22,7 @@ li {
 
 /*  */
 body {
+  position: relative;
   height: 100vh;
   background-color: var(--background);
 }
@@ -31,23 +34,75 @@ body {
   align-items: center;
 }
 
+.maximize {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   margin: 0 auto;
   width: min(80%, 1000px);
-  display: flex;
 }
 
 /* Splash page */
 .splash-page {
+  position: relative;
   height: 100vh;
   flex-direction: column;
 }
 
+.hero-bg {
+  position: absolute;
+  background-image: url(./assets/hero-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 85%;
+}
+
+.splash-page > h1 {
+  text-shadow: 0px 0px 5px #242424;
+}
+
 .splash-page .name {
-  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .splash-page .role {
   font-family: 'Anonymous Pro', 'Poppins', sans-serif;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
 }
+
+.name,
+.role {
+  z-index: 0;
+}
+
+/* About me section */
+.about-me {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.profile-pic {
+  content: url(./assets/profile-icon.jpg);
+  width: var(--profile-icon-size);
+  height: var(--profile-icon-size);
+  border-radius: 40px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Tech Stack section */
