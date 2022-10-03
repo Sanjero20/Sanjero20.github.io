@@ -24,6 +24,10 @@ li {
 }
 
 /*  */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   height: 100vh;
@@ -93,42 +97,26 @@ body {
 /* About me section */
 .about-me {
   min-height: 50vh;
+  padding: 2em 0;
   background-color: var(--main-color);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .self-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.self-description > p {
   color: white;
   text-align: center;
 }
 
-.self-description > p > strong {
+.self-description > strong {
   color: var(--primary);
-}
-
-.about-me > .contents {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
-  gap: 30px;
-}
-
-.profile-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75em;
 }
 
 .profile-pic {
@@ -140,27 +128,14 @@ body {
 
 /* Tech Stack section */
 .tech-stack {
-  min-height: 25vh;
-  background-color: var(--main-color);
-}
-
-.tech-stack > .title {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.tech-stack > .title > h1 {
-  font-size: var(--title-size);
-  color: white;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  gap: 10px;
 }
 
 .my-skillset {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   gap: 10px;
 }
 
@@ -171,12 +146,12 @@ body {
 /* My Project section */
 .my-projects {
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
   flex-direction: column;
 }
 
-.my-projects > h1.title {
-  font-size: var(--title-size);
+.my-project-title {
+  font-size: 3em;
 }
 
 .hidden {
