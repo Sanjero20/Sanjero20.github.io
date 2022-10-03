@@ -9,10 +9,12 @@
 }
 
 :root {
-  --background: #282a37;
-  --main-color: #333748;
+  --main-color: #282a37;
+  --background: #333748;
   --primary: #01cc8e;
+  --profile-border: 40px;
   --profile-icon-size: 200px;
+  --lang-icon-size: 40px;
 }
 
 /* reset stylings */
@@ -41,26 +43,24 @@ body {
 
 .container {
   margin: 0 auto;
-  width: min(80%, 1000px);
+  width: min(70%, 1000px);
 }
+
+/* Background Images parallax */
 
 /* Splash page */
 .splash-page {
   position: relative;
   height: 100vh;
-  flex-direction: column;
+  background-color: var(--background);
 }
 
-.hero-bg {
+.title {
   position: absolute;
-  background-image: url(./assets/hero-bg.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  opacity: 85%;
+  text-align: center;
 }
 
-.splash-page > h1 {
+.title > h1 {
   text-shadow: 0px 0px 5px #242424;
 }
 
@@ -73,16 +73,19 @@ body {
   font-size: clamp(1.5rem, 3.5vw, 3rem);
 }
 
-.name,
-.role {
-  z-index: 0;
-}
-
 /* About me section */
 .about-me {
   min-height: 300px;
+  background-color: var(--main-color);
   display: flex;
   align-items: center;
+}
+
+.about-me > .contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 30px;
 }
 
 .profile-icon {
@@ -96,13 +99,36 @@ body {
   content: url(./assets/profile-icon.jpg);
   width: var(--profile-icon-size);
   height: var(--profile-icon-size);
-  border-radius: 40px;
-}
-
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  border-radius: var(--profile-border);
 }
 
 /* Tech Stack section */
+.tech-stack {
+  height: 250px;
+  background-color: var(--background);
+}
+
+.tech-stack > .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-stack > .title > h1 {
+  font-size: 3em;
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.my-skillset {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.my-skillset > img {
+  width: var(--lang-icon-size);
+}
