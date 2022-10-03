@@ -9,12 +9,13 @@
 }
 
 :root {
-  --main-color: #282a37;
-  --background: #333748;
+  --background: #282a37;
+  --secondary-bg: #333748;
   --primary: #01cc8e;
   --profile-border: 40px;
   --profile-icon-size: 200px;
   --lang-icon-size: 40px;
+  --title-size: clamp(1.5rem, 3.5vw, 3rem);
 }
 
 /* reset stylings */
@@ -47,12 +48,28 @@ body {
 }
 
 /* Background Images parallax */
+.hero-bg,
+.my-projects-bg {
+  position: absolute;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 50%;
+}
+
+.hero-bg {
+  background-image: url(./assets/hero-bg.jpg);
+}
+
+.my-projects-bg {
+  background-image: url(./assets/splash-page.jpg);
+}
 
 /* Splash page */
 .splash-page {
   position: relative;
   height: 100vh;
-  background-color: var(--background);
 }
 
 .title {
@@ -75,14 +92,33 @@ body {
 
 /* About me section */
 .about-me {
-  min-height: 300px;
+  min-height: 50vh;
   background-color: var(--main-color);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.self-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.self-description > p {
+  color: white;
+  text-align: center;
+}
+
+.self-description > p > strong {
+  color: var(--primary);
 }
 
 .about-me > .contents {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 15px;
   gap: 30px;
@@ -104,19 +140,18 @@ body {
 
 /* Tech Stack section */
 .tech-stack {
-  height: 250px;
-  background-color: var(--background);
+  min-height: 25vh;
+  background-color: var(--main-color);
 }
 
 .tech-stack > .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
 }
 
 .tech-stack > .title > h1 {
-  font-size: 3em;
+  font-size: var(--title-size);
   color: white;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
@@ -131,4 +166,28 @@ body {
 
 .my-skillset > img {
   width: var(--lang-icon-size);
+}
+
+/* My Project section */
+.my-projects {
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.my-projects > h1.title {
+  font-size: var(--title-size);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
