@@ -23,6 +23,10 @@ li {
   list-style-type: none;
 }
 
+hr {
+  opacity: 50%;
+}
+
 /*  */
 html {
   scroll-behavior: smooth;
@@ -31,7 +35,7 @@ html {
 body {
   position: relative;
   height: 100vh;
-  background-color: var(--background);
+  background-color: var(--secondary-bg);
 }
 
 /* general style */
@@ -70,6 +74,20 @@ body {
   background-image: url(./assets/splash-page.jpg);
 }
 
+/* Parralax animation */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 /* Splash page */
 .splash-page {
   position: relative;
@@ -98,7 +116,6 @@ body {
 .about-me {
   min-height: 50vh;
   padding: 2em 0;
-  background-color: var(--main-color);
   flex-direction: column;
   gap: 20px;
 }
@@ -154,15 +171,61 @@ body {
   font-size: 3em;
 }
 
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
+/* Project Showcase */
+.project-showcase {
+  min-height: 100vh;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+.project {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.proj-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.proj-title > img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.proj-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btns {
+  display: flex;
+  gap: 1em;
+}
+
+.btn {
+  width: 125px;
+  background-color: var(--primary);
+  font-weight: bold;
+  border: 1px;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 100ms;
+}
+
+.btn:hover {
+  background-color: #049c6e;
+}
+
+footer {
+  background-color: var(--background);
+  text-align: center;
+  padding: 0.5em 0;
 }
