@@ -1,0 +1,63 @@
+// colors
+$background: #282a37;
+$secondary: #333748;
+$primary: #01cc8e;
+
+// profile icon
+$profile-bd: 40px;
+$profile-icon-size: 200px;
+
+// h1 title font-size
+$section-title: clamp(1.5rem, 3.5vw, 3rem);
+
+// language icons
+$language-icon: 40px;
+
+// gap
+$gap-l: 2em;
+$gap-m: 1em;
+$gap-s: 0.75em;
+
+// General stylings
+@mixin center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin maximize-screen {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin parallax-bg {
+  position: absolute;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 50%;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(70%, 1000px);
+}
+
+// Parallax animation
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0%);
+}
+
+.title {
+  text-shadow: 0px 5px 5px #242424;
+}

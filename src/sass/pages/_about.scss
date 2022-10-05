@@ -1,0 +1,45 @@
+.about-me {
+  min-height: 50vh;
+  @include center-all;
+  flex-direction: column;
+  padding: 2em 0;
+  gap: $gap-s;
+}
+
+.profile {
+  @include center-all;
+  flex-direction: column;
+  gap: $gap-s;
+}
+
+.profile-pic {
+  content: url(/src/assets/profile-icon.jpg);
+  width: $profile-icon-size;
+  height: $profile-icon-size;
+  border-radius: $profile-bd;
+}
+
+// self description
+.self-description {
+  text-align: center;
+
+  strong {
+    color: $primary;
+  }
+}
+
+.tech-stack {
+  @include center-all;
+  flex-direction: column;
+}
+
+.my-skillset {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc($gap-s - 0.2em);
+}
+
+.my-skillset > img {
+  width: $language-icon;
+}

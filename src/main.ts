@@ -1,5 +1,4 @@
-import './style.css';
-import './mobile.css';
+import './index.scss';
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {

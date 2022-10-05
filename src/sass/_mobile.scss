@@ -1,0 +1,44 @@
+@media only screen and (max-device-width: 1024px) {
+  /* remove parallax scroll fx */
+  .splash-bg,
+  .my-projects-bg {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  $mobile-icon-size: 150px;
+  $mobile-profile-bd: 40px;
+  $mobile-language-icon: 35px;
+
+  .container {
+    width: 90%;
+  }
+
+  .profile-pic {
+    width: $mobile-icon-size;
+    height: $mobile-icon-size;
+    border-radius: $mobile-profile-bd;
+  }
+
+  .my-skillset {
+    width: 65%;
+
+    img {
+      width: $mobile-language-icon;
+    }
+  }
+
+  /* Project section */
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .proj-description {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

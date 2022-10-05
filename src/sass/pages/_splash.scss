@@ -1,0 +1,25 @@
+.splash-bg {
+  @include parallax-bg;
+  @include maximize-screen;
+  background-image: url(/src/assets/splash-bg.jpg);
+}
+
+.splash-page {
+  @include center-all;
+  position: relative;
+  height: 100vh;
+
+  .title {
+    @include center-all;
+    flex-direction: column;
+
+    .name {
+      font-size: clamp(2rem, 5vw, 5rem);
+    }
+
+    .role {
+      font-family: 'Anonymous Pro', sans-serif;
+      font-size: clamp(1.5rem, 3.5vw, 3rem);
+    }
+  }
+}
