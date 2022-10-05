@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 800px) {
   $mobile-icon-size: 150px;
-  $mobile-profile-bd: 40px;
+  $mobile-profile-bd: 30px;
   $mobile-language-icon: 35px;
 
   .container {
@@ -33,12 +33,13 @@
   .project {
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
   }
 
   .proj-description {
     text-align: center;
     justify-content: center;
     align-items: center;
+    transform: translateY(0);
   }
 }
