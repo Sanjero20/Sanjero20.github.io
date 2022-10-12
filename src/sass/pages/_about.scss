@@ -13,7 +13,7 @@
 }
 
 .profile-pic {
-  content: url(/src/assets/profile-icon.jpg);
+  content: url(/src/assets/profile-icon.webp);
   width: $profile-icon-size;
   height: $profile-icon-size;
   border-radius: $profile-bd;
@@ -41,6 +41,6 @@
   gap: calc($gap-s - 0.2em);
 }
 
-.my-skillset > img {
+.my-skillset > .lang-icon {
   width: $language-icon;
 }

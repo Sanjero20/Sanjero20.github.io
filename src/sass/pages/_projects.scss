@@ -11,7 +11,7 @@
 .my-projects-bg {
   @include parallax-bg;
   @include maximize-screen;
-  background-image: url(/src/assets/projects-bg.jpg);
+  background-image: url(/src/assets/projects-bg.webp);
 }
 
 // Project Showcase

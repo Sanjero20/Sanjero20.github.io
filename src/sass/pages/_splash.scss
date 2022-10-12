@@ -1,7 +1,7 @@
 .splash-bg {
   @include parallax-bg;
   @include maximize-screen;
-  background-image: url(/src/assets/splash-bg.jpg);
+  background-image: url(/src/assets/splash-bg.webp);
 }
 
 .splash-page {
