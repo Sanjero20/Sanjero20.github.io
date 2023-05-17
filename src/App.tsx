@@ -1,10 +1,9 @@
+import Header from './components/Header';
+
 function App() {
   return (
-    <div>
-      <div className="flex gap-1 text-blue-600">
-        <p>hello</p>
-        <p>world</p>
-      </div>
+    <div className="bg h-screen bg-body text-white">
+      <Header />
     </div>
   );
 }
