@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="bg- flex h-20 items-center justify-between px-24 font-poppins text-gray">
+    <div className="xs:px-0 container mx-auto flex h-20 items-center justify-between  px-24 text-gray">
       <h1 className="text-3xl font-bold">Angelo Santos</h1>
       <nav>
         <ul className="flex gap-5 text-lg">
