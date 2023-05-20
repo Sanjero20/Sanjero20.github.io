@@ -1,16 +1,21 @@
+import Container from './Container';
+
 function Hero() {
   return (
-    <div className="container mx-auto flex items-center justify-center gap-20 px-24">
-      <img className="h-72 rounded-lg" src="./oreki.webp"></img>
+    <Container className="flex-col">
+      <img
+        className="mx-auto w-60 rounded-full p-4 sm:h-72 sm:w-72 "
+        src="./oreki.webp"
+        alt="profile"
+      />
 
-      <div className="flex flex-col font-bold">
-        <h1 className="text-5xl">Hi, I'm Angelo Santos</h1>
-        <h2 className="text-xl">
+      <div className="flex-col text-center font-bold">
+        <h1 className="text-2xl sm:text-3xl">Hi, I'm Angelo Santos</h1>
+        <h2 className="text-sm sm:text-xl">
           A front-end web developer based in the Philippines
         </h2>
-        <br />
       </div>
-    </div>
+    </Container>
   );
 }
 
