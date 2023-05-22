@@ -9,8 +9,10 @@ function Hero() {
         alt="profile"
       />
 
-      <div className="flex-col text-center font-bold">
-        <h1 className="text-2xl sm:text-3xl">Hi, I'm Angelo Santos</h1>
+      <div className="flex-col text-center">
+        <h1 className="text-2xl font-bold sm:text-3xl">
+          Hi, I'm Angelo Santos
+        </h1>
         <h2 className="text-sm sm:text-xl">
           A front-end web developer based in the Philippines
         </h2>
