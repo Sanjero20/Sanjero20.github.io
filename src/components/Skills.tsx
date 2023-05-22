@@ -71,9 +71,9 @@ function Skills() {
             <img
               src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon.src}`}
               alt={icon.name}
-              className={`h-10 ${icon.styles}`}
+              className={`h-8 sm:h-10 ${icon.styles}`}
             />
-            <p className="text-sm">{icon.name}</p>
+            <p className="hidden text-sm sm:block">{icon.name}</p>
           </div>
         ))}
       </div>
