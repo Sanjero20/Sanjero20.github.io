@@ -1,13 +1,17 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import TechStack from './components/TechStack';
+import Skills from './components/Skills';
+
+import Line from './components/Line';
 
 function App() {
   return (
-    <div className="h-screen bg-body font-poppins text-white">
+    <div className="flex min-h-screen flex-col gap-5 bg-body font-poppins text-white">
       <Header />
       <Hero />
-      {/* <TechStack /> */}
+      <Line />
+      <Skills />
+      <Line />
     </div>
   );
 }
