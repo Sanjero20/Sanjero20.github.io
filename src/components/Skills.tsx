@@ -61,7 +61,7 @@ const stack: Stack[] = [
 
 function Skills() {
   return (
-    <Container className="flex flex-col  items-center gap-2">
+    <Container className="flex flex-col  items-center gap-2 py-2">
       <h1 className="text-3xl font-bold">SKILLS</h1>
       {/* Icons of Programming Languages and Tools */}
 

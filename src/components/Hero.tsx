@@ -2,7 +2,7 @@ import Container from './Container';
 
 function Hero() {
   return (
-    <Container className="flex-col">
+    <Container id="home" className="flex-col">
       <img
         className="mx-auto w-60 rounded-full p-4 sm:h-72 sm:w-72 "
         src="./oreki.webp"

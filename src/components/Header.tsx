@@ -6,10 +6,15 @@ function Header() {
       <img className="w-40 invert" src="/logo.webp" />
       <nav className="hidden md:flex">
         <ul className="flex gap-5 text-lg">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </Container>
