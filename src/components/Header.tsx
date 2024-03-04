@@ -2,7 +2,7 @@ import Container from "./Container";
 
 function Header() {
   return (
-    <div className="sticky top-0 bg-body shadow">
+    <div className="top-0 bg-body shadow md:sticky">
       <Container className="flex h-20 items-center justify-between">
         <img className="w-1/3 invert sm:w-40" src="/logo.webp" />
 
