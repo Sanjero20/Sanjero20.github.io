@@ -1,15 +1,20 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import Line from './components/Line';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Line from "./components/Line";
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col gap-5 bg-body font-poppins text-white">
+    <div className=" flex h-full min-h-screen flex-col bg-body font-poppins text-neutral-100">
       <Header />
       <Hero />
+
       <Line />
       <Skills />
+
+      <Line />
+      <Projects />
     </div>
   );
 }
