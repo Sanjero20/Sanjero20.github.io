@@ -7,7 +7,19 @@ interface CardProps {
 function Card({ project }: CardProps) {
   return (
     <div className="flex h-64 w-full flex-col justify-between rounded-lg border-2 border-neutral-500">
-      <div className="h-full"></div>
+      <div className="group relative h-full">
+        {/* Image */}
+        <img
+          src={project.img}
+          alt={project.title}
+          className="h-full w-full rounded-t-lg object-cover transition-all ease-in-out group-hover:opacity-5"
+        />
+
+        {/* Description  */}
+        <div className="absolute inset-0 hidden h-full gap-2 p-4 opacity-0 group-hover:flex group-hover:opacity-100">
+          <p className="text-md font-bold text-white">{project.description}</p>
+        </div>
+      </div>
 
       <hr className="border-neutral-500" />
 
