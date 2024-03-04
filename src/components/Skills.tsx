@@ -29,7 +29,11 @@ const stack: Stack[] = [
   },
   {
     name: 'Tailwind',
-    src: 'tailwindcss/tailwindcss-plain.svg',
+    src: 'tailwindcss/tailwindcss-original.svg',
+  },
+  {
+    name: 'Vite',
+    src: 'vitejs/vitejs-original.svg',
   },
   {
     name: 'React',
@@ -37,25 +41,12 @@ const stack: Stack[] = [
   },
   {
     name: 'NextJS',
-    src: 'nextjs/nextjs-line.svg',
+    src: 'nextjs/nextjs-original.svg',
     styles: 'invert',
   },
   {
-    name: 'Python',
-    src: 'python/python-original.svg',
-  },
-  {
-    name: 'Git',
-    src: 'git/git-original.svg',
-  },
-  {
-    name: 'Github',
-    src: 'github/github-original.svg',
-    styles: 'invert',
-  },
-  {
-    name: 'VSCode',
-    src: 'vscode/vscode-original.svg',
+    name: 'MongoDB',
+    src: 'mongodb/mongodb-original.svg',
   },
 ];
 
@@ -73,7 +64,7 @@ function Skills() {
               alt={icon.name}
               className={`h-8 sm:h-10 ${icon.styles}`}
             />
-            <p className="hidden text-sm sm:block">{icon.name}</p>
+            {/* <p className="hidden text-sm sm:block">{icon.name}</p> */}
           </div>
         ))}
       </div>

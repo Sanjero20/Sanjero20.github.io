@@ -3,7 +3,8 @@ import Container from './Container';
 function Header() {
   return (
     <Container className="flex h-20 items-center justify-between ">
-      <img className="w-40 invert" src="/logo.webp" />
+      <img className="w-1/3 sm:w-40 invert" src="/logo.webp" />
+
       <nav className="hidden md:flex">
         <ul className="flex gap-5 text-lg">
           <li>
@@ -13,7 +14,7 @@ function Header() {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contacts</a>
           </li>
         </ul>
       </nav>
