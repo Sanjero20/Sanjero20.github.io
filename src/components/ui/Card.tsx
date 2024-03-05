@@ -16,7 +16,7 @@ function Card({ project }: CardProps) {
         />
 
         {/* Description  */}
-        <div className="absolute inset-0 top-0 hidden p-4 opacity-0 group-hover:flex group-hover:opacity-100">
+        <div className="absolute inset-0 top-0 hidden items-center justify-center p-4 text-center opacity-0 group-hover:flex group-hover:opacity-100">
           <p className="text-md font-bold text-white">{project.description}</p>
         </div>
       </div>
